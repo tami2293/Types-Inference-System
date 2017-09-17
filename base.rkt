@@ -312,7 +312,8 @@
 
 ;; auxRun :: Type List[Constraint] List[Constraint] -> Type
 ;; Looks for and returns the final type of a given type using its
-;; unified constraints list.
+;; unified constraints list. cnstList and in-cnstList must be the
+;; same list.
 (define (auxRun type cnstList in-cnstList)
   (match type
     [(TNum) type]
